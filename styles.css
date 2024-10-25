@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif; /*Cambia il font del body in Arial senza grazie*/
+}
+
+header {
+    background-color: #ad2a37;
+    color: white;              
+    text-align: center;         
+    padding: 1rem;             
+    font-size: 2.5rem;      
+}
+
+footer {
+    background-color: #ad2a37;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+footer a {
+    color: white;   
+    text-decoration: none; 
+}
+
+footer a:hover{
+    color: blue;   
+}
+
+#post-list {
+    display: flex; /*Utilizza il layout flexbox*/
+    flex-wrap: wrap; /*Permette di andare a capo quando necessario*/
+    justify-content: center; /*Centra i post orizzontalmente*/
+    gap: 1rem; /*Imposta una spaziatura di 1rem tra le card*/
+    margin-top: 80px; /*Margine superiore per evitare sovrapposizione con l'header*/
+    margin-bottom: 60px; /*Margine inferiore per evitare sovrapposizione con il footer*/
+}
+
+.card h2 {
+    font-weight: bold;  
+    font-size: 1.25rem; 
+    color: black;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+#back-button {
+    margin: 20px 0; /*Margine per staccare il button dal footer*/
+    background-color: #ad2a37; 
+    color: white; 
+    border: none; 
+    padding: 0.5rem; 
+    border-radius: 3px;
+    cursor: pointer; /*Cambia il cursore quando si passa sopra il pulsante*/
+}
+
+#back-button:hover{
+    background-color: red;
+}
+
+#contact-section{
+    font-weight: 100; /*Imposta i caratteri nel footer a normali (precedentemente in grassetto)*/
+}
+
+
+.card {
+    flex: 1 1 30%; /*In questo modo appaiono 3 card per ogni riga*/
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s; /*Transizione per il cambio colore in hover*/
+}
+
+.card:hover {
+    background-color: lightgrey;
+}
+
+#post-detail {
+    padding: 1rem;
+    margin-bottom: 220px; /*Margine inferiore per staccare il post dal footer*/
+}
